@@ -4,6 +4,11 @@
     justify-content: space-between;
     align-items: center;
     gap: 40px;
+    /* background-color: red; */
+    position: sticky;
+    top: 0px;
+    z-index: 999999999;
+    /* background-color: #ccc; */
 }
 
 .left-side-container {
@@ -100,4 +105,18 @@
     padding: 4px 0;
 
 
+}
+
+
+.chips{
+    display: inline-block;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    padding: 4px 12px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-color: #ccccccc1;
+    border-radius: 20px;
 }

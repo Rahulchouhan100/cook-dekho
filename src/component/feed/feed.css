@@ -1,6 +1,6 @@
 .feed-container {
     /* border: 1px solid red; */
-    margin: 20px 20%;
+    margin: 20px 10%;
 
 }
 
@@ -24,6 +24,8 @@
 .feed-post-container>.top-rated-cooks {
     /* border: 1px solid purple; */
     flex-basis: 35%;
+    /* background-color: red; */
+    
 
 }
 
@@ -49,5 +51,38 @@
 
 /* -------------------- custmoer post -------------- */
 .customer-post-container{
+    /* border: 1px solid red; */
+    height: 90vh;
+    padding-top: 12px;
+
+}
+
+.feed-post-box{
     border: 1px solid red;
+    margin-top: 12px;
+}
+
+.customer-post-card{
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    padding: 12px;
+    border-radius: 4px;
+}
+
+.name-avatar{
+    display: flex;
+    gap: 12px;
+}
+.posted-time{
+    opacity: 0.5;
+}
+.post-description{
+    margin-top: 12px;
+}
+.chips-container{
+    display: flex;
+    gap: 12px;
+    margin-top: 12px;
+    /* justify-content: space-between; */
+    flex-wrap: wrap;
 }

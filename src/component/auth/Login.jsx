@@ -1,8 +1,10 @@
 import React from "react";
 import loginImg from "../../assest/Professional Cook 1.png";
 import "./login.css";
+import { useNavigate } from "react-router-dom";
 
 const Login = () => {
+  const navigate = useNavigate()
   return (
     <div className="login-container">
       <div className="login-img">
@@ -28,7 +30,15 @@ const Login = () => {
                 className="input-box"
               />
               <div className="btn-container">
-                <button className="btn">Submit</button>
+                <button
+                  className="btn"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    navigate("/feed")
+                  }}
+                >
+                  Submit
+                </button>
               </div>
             </form>
           </div>

@@ -7,10 +7,12 @@
 .login-container>div {
     flex-basis: 50%;
 }
-.login-img{
+
+.login-img {
     width: 600px;
 }
-.subtitle{
+
+.subtitle {
     text-align: center;
     color: gray;
 }
@@ -70,4 +72,22 @@
     font-weight: 600;
     cursor: pointer;
     border-radius: 4px;
+}
+
+@media only screen and (max-width: 900px) and (min-width: 240px) {
+    .login-img {
+        display: none;
+    }
+
+    .login-container>div {
+        flex-basis: 100%;
+    }
+
+}
+
+@media only screen and (max-width: 420px) and (min-width: 240px) {
+    .subtitle {
+        text-align: start;
+
+    }
 }

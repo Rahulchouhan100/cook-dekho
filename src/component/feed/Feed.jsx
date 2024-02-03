@@ -3,6 +3,10 @@ import "./feed.css";
 import Navbar from "../reusable/Navbar";
 import { Avatar } from "@mui/material";
 import CookCard from "../reusable/CookCard";
+import Chips from "../reusable/Chips";
+import ManIcon from "@mui/icons-material/Man";
+import CurrencyRupeeIcon from '@mui/icons-material/CurrencyRupee';
+import GroupsIcon from '@mui/icons-material/Groups';
 
 const Feed = () => {
   return (
@@ -18,9 +22,34 @@ const Feed = () => {
             />
             <p className="write">Write something....</p>
           </div>
-        </div>
-        <div>
-          <div className="customer-post-container"></div>
+          <div className="customer-post-container">
+            <div>
+              <div className="customer-post-card">
+                <div className="name-avatar">
+                  <Avatar />
+                  <div>
+                    <h4>Rahul chouhan</h4>
+                    <small className="posted-time">16 hour ago</small>
+                  </div>
+                </div>
+                <p className="post-description">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
+                  tenetur dicta mollitia non recusandae explicabo veritatis
+                  reprehenderit voluptatem! Reprehenderit fugiat voluptatem,
+                  esse commodi sapiente ab impedit omnis excepturi culpa nihil
+                  inventore blanditiis iusto minus beatae ullam! Ipsam eaque
+                  temporibus doloremque odit ullam illo optio eos, obcaecati ut
+                  ad iusto necessitatibus?
+                </p>
+                <div className="chips-container">
+                  <Chips icon={<ManIcon/>} title={"Male"}/>
+                  <Chips icon={<CurrencyRupeeIcon/>} title={"6000"}/>
+                  <Chips icon={<GroupsIcon/>} title={"6"}/>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
 
         <div className="top-rated-cooks">
