@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;500;600;700;800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Manrope', sans-serif;
+}
+
+body {
+  background-color: var(--bg-color);
+
+}
+
+:root {
+  --bg-color: #F8F7F5;
+  --primary-clr: #FF5500;
+  --secondary-clr: #202124;
+  --green-clr: #008000;
+  --light-gray: #909090;
+}
+
+/******************** large tablets and laptops ********************/
+@media screen and (max-width: 1440px) and (min-width: 1200px) {
+  main {}
+}
+
+/******************** large tablets and laptops ********************/
+@media screen and (max-width: 1200px) and (min-width: 900px) {
+  main {}
+}
+
+/******************** large tablets ********************/
+@media only screen and (max-width: 900px) and (min-width: 768px) {
+  main {}
+}
+
+/******************** mobile phones (lg) and small tablets ********************/
+@media only screen and (max-width: 768px) and (min-width: 480px) {
+  main {}
+}
+
+/******************** mobile phones (sm) ********************/
+@media only screen and (max-width: 480px) {
+  main {}
+}

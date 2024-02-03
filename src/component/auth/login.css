@@ -1,0 +1,73 @@
+.login-container {
+    display: flex;
+    justify-content: space-between;
+    height: 100vh;
+}
+
+.login-container>div {
+    flex-basis: 50%;
+}
+.login-img{
+    width: 600px;
+}
+.subtitle{
+    text-align: center;
+    color: gray;
+}
+
+.login-img {
+    /* background-origin: ; */
+    background-color: #FF5500;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+}
+
+.login-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.company-name {
+    /* font-size: 24px; */
+    color: #FF5500;
+}
+
+.label {
+    font-size: 24px;
+    /* margin-bottom: 12px; */
+}
+
+.input-box {
+    padding: 12px 8px;
+    border-radius: 4px;
+    outline: none;
+    border: 1px solid #ccc;
+    width: 100%;
+    margin: 16px 0;
+}
+
+.form-container {
+    margin-top: 24px;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: end;
+}
+
+.btn {
+    background-color: #FF5500;
+    color: white;
+    outline: none;
+    border: none;
+    padding: 8px 24px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 4px;
+}

@@ -1,0 +1,103 @@
+.navbar-container {
+    /* padding: 4px; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+.left-side-container {
+    /* border: 1px solid green; */
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex: 2;
+    /* padding: 0 8px; */
+    /* padding: 8px; */
+}
+
+.right-side-container {
+    /* border: 1px solid blue; */
+    display: flex;
+    align-items: center;
+    flex: .2;
+    gap: 20px;
+}
+
+.logo {
+    width: 88px;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    /* border: 1px solid red; */
+    border-radius: 4px;
+    width: 100%;
+    background-color: #E4E4E4;
+    padding: 0px 8px;
+
+}
+
+.search-input-box {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    padding: 12px 4px;
+    width: 100%;
+}
+
+
+.cook-card-details {
+    /* border: 1px solid red; */
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    padding: 12px;
+    margin-top: 8px;
+    background-color: white;
+    display: flex;
+    /* align-items: center; */
+    border-radius: 4px;
+    gap: 16px;
+    /* justify-content: space-between; */
+}
+
+.rating {
+    padding: 2px 16px;
+    border-radius: 4px;
+    background-color: var(--green-clr);
+    color: white;
+    margin-top: 14px;
+    text-align: center;
+    font-size: 12px;
+    width: max-content;
+}
+
+.cook-image {
+    /* border: 1px solid pink; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cook-all-details {
+    /* border: 1px solid purple; */
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.gray-clr {
+    color: #909090;
+}
+
+.btn-view-profile {
+    background-color: var(--primary-clr);
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    padding: 4px 0;
+
+
+}

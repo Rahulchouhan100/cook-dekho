@@ -1,0 +1,53 @@
+.feed-container {
+    /* border: 1px solid red; */
+    margin: 20px 20%;
+
+}
+
+.feed-post {
+    /* border: 1px solid red; */
+}
+
+.feed-post-container {
+    display: flex;
+    gap: 16px;
+    /* border: 1px solid gray; */
+    margin-top: 20px;
+    /* padding: 4px; */
+}
+
+.feed-post-container>.post {
+    /* border: 1px solid green; */
+    flex-basis: 65%;
+}
+
+.feed-post-container>.top-rated-cooks {
+    /* border: 1px solid purple; */
+    flex-basis: 35%;
+
+}
+
+.write-something {
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 4px 30px -20px rgba(0, 0, 0, 0.25);
+    background-color: #fff;
+    gap: 12px;
+    border-radius: 4px;
+}
+
+.write {
+    color: #909090;
+}
+
+.cook-card-container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+/* -------------------- custmoer post -------------- */
+.customer-post-container{
+    border: 1px solid red;
+}
