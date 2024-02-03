@@ -10,7 +10,7 @@ const Login = () => {
       <div className="login-img">
         <img src={loginImg} alt="loginImg" className="login-img" />
       </div>
-      <div className="login-box">
+      <div className="login-box isMobile">
         <div style={{ padding: "16px" }}>
           <h1>
             Welcome to <span className="company-name">COOKDEKHO</span>
