@@ -1,6 +1,6 @@
 .feed-container {
     /* border: 1px solid red; */
-    margin: 20px 10%;
+    margin: 20px 14%;
 
 }
 
@@ -25,7 +25,7 @@
     /* border: 1px solid purple; */
     flex-basis: 35%;
     /* background-color: red; */
-    
+
 
 }
 
@@ -37,6 +37,7 @@
     background-color: #fff;
     gap: 12px;
     border-radius: 4px;
+    cursor: pointer;
 }
 
 .write {
@@ -50,39 +51,82 @@
 }
 
 /* -------------------- custmoer post -------------- */
-.customer-post-container{
+.customer-post-container {
     /* border: 1px solid red; */
     height: 90vh;
     padding-top: 12px;
 
 }
 
-.feed-post-box{
+.feed-post-box {
     border: 1px solid red;
     margin-top: 12px;
 }
 
-.customer-post-card{
+.customer-post-card {
     background-color: #fff;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
     padding: 12px;
     border-radius: 4px;
 }
 
-.name-avatar{
+.name-avatar {
     display: flex;
     gap: 12px;
 }
-.posted-time{
+
+.posted-time {
     opacity: 0.5;
 }
-.post-description{
+
+.post-description {
     margin-top: 12px;
 }
-.chips-container{
+
+.chips-container {
     display: flex;
     gap: 12px;
     margin-top: 12px;
     /* justify-content: space-between; */
     flex-wrap: wrap;
+    position: relative;
+}
+
+.btn-request {
+    position: absolute;
+    right: 0;
+}
+
+.send-request-container {
+    width: 20vw;
+    background-color: white;
+    padding: 12px;
+    border-radius: 4px;
+}
+
+.send-request-heading {
+    text-align: center;
+}
+
+.input-field {
+    padding: 8px 4px;
+    margin-bottom: 8px;
+    border-radius: 4px;
+    outline: none;
+    border: 1px solid #ccc;
+    width: 100%;
+
+}
+
+.btn-wrapper {
+    text-align: center;
+    margin-top: 12px;
+}
+
+.textarea {
+    padding: 4px;
+    width: 100%;
+    resize: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
 }

@@ -1,27 +1,23 @@
-import React from "react";
+import React, { useState } from "react";
 import "./feed.css";
 import Navbar from "../reusable/Navbar";
-import { Avatar } from "@mui/material";
+import { Avatar, Modal } from "@mui/material";
 import CookCard from "../reusable/CookCard";
 import Chips from "../reusable/Chips";
 import ManIcon from "@mui/icons-material/Man";
-import CurrencyRupeeIcon from '@mui/icons-material/CurrencyRupee';
-import GroupsIcon from '@mui/icons-material/Groups';
+import CurrencyRupeeIcon from "@mui/icons-material/CurrencyRupee";
+import GroupsIcon from "@mui/icons-material/Groups";
+import CookPostModal from "../reusable/CookPostModal";
 
 const Feed = () => {
+  const [showSendRequestModal,setShowSendRequestModal] = useState(false)
+  console.log("feeddddd");
   return (
     <div className="feed-container">
       <Navbar />
       <div className="feed-post-container">
         <div className="post">
-          <div className="write-something">
-            <Avatar
-              sx={{ width: "36px", height: "36px", borderRadius: "50%" }}
-              alt="Remy Sharp"
-              src="https://avatars.githubusercontent.com/u/78010526?s=400&u=4135c48f89d0dc0269f40f02a826ec12b84f9d92&v=4"
-            />
-            <p className="write">Write something....</p>
-          </div>
+          <CookPostModal />
           <div className="customer-post-container">
             <div>
               <div className="customer-post-card">
@@ -42,10 +38,10 @@ const Feed = () => {
                   ad iusto necessitatibus?
                 </p>
                 <div className="chips-container">
-                  <Chips icon={<ManIcon/>} title={"Male"}/>
-                  <Chips icon={<CurrencyRupeeIcon/>} title={"6000"}/>
-                  <Chips icon={<GroupsIcon/>} title={"6"}/>
-                  
+                  <Chips icon={<ManIcon />} title={"Male"} />
+                  <Chips icon={<CurrencyRupeeIcon />} title={"6000"} />
+                  <Chips icon={<GroupsIcon />} title={"6"} />
+                   <button className="btn btn-request" onClick={() => setShowSendRequestModal(true)}>Send Request</button>
                 </div>
               </div>
             </div>
@@ -72,6 +68,33 @@ const Feed = () => {
           </div>
         </div>
       </div>
+
+      <Modal
+        open={showSendRequestModal}
+        onClose={() => {
+          setShowSendRequestModal(false);
+        }}
+        aria-labelledby="modal-modal-title"
+        //   aria-describedby="modal-modal-description"
+        className="modal_reusable"
+      >
+        <div className="send-request-container">
+          <div className="send-request-heading">
+            <h3>Please Fill your details</h3>
+          </div>
+          <form action="">
+            <label htmlFor="name">Name</label> <br />
+            <input type="text" className="input-field" placeholder="Enter your name" /> <br />
+            <label htmlFor="name"> phone number</label> <br />
+            <input type="text" className="input-field" placeholder="Enter your phone number"/> <br />
+            <label htmlFor="message">Your message</label> <br />
+            <textarea name="message" id="message"  rows="5" placeholder="Enter your message" className="textarea"></textarea>
+            <div className="btn-wrapper">
+              <button className="btn">Send</button>
+            </div>
+          </form>
+        </div>
+      </Modal>
     </div>
   );
 };

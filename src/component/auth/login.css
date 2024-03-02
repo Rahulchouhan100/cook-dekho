@@ -73,7 +73,9 @@
     cursor: pointer;
     border-radius: 4px;
 }
-
+.show-error{
+    color: red;
+}
 @media only screen and (max-width: 900px) and (min-width: 240px) {
     .login-img {
         display: none;
@@ -102,4 +104,40 @@
         text-align: start;
 
     }
+    .card-container{
+        flex-direction: column;
+    }
+}
+
+.asking-for-permissions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+.asking-for-permissions > h1{
+ margin-bottom: 16px;
+}
+
+.img-cook{
+    width: 100px;
+}
+.card{
+    border: 1px solid #ccc;
+    text-align: center;
+    padding: 8px;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 240px;
+}
+.card-container{
+    display: flex;
+    gap: 16px;
+   
+}
+.card:hover{
+    transition: all .3s ease-in;
+    border: none;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
